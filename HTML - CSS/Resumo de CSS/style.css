@@ -1,0 +1,60 @@
+body {
+    background: url(fundo.jpg) fixed no-repeat;
+    color: white;
+    font-size: 15px;
+}
+
+img {
+    border: darkgreen solid 1px;
+    width: 400px;
+}
+
+em {
+    background-color: rgb(46, 31, 31);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+abbr {
+    text-decoration: overline darkgreen;
+}
+
+ins {
+    color: white;
+    text-decoration: none;
+}
+
+code {
+    background-color: rgb(24, 122, 139);
+    color: rgb(20, 20, 75);
+}
+
+li,dd,p {
+    color: rgb(155, 133, 133);
+}
+
+small {
+    background: rgb(41, 77, 71);
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-top: green solid 2px;
+}
+
+h1 {
+    background: rgb(0, 128, 0);
+}
+
+del {
+    color: transparent;
+}
+
+#t{
+    font-size: 1.5rem;
+    border-bottom: rgb(16, 108, 131) solid 2px;
+    
+}

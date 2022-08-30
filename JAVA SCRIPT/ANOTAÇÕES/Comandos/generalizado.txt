@@ -1,0 +1,3 @@
+GENERALIZADO
+
+.search // "abcc".search("c") Procura a primeira busca referida que tiver dentro da STRING; que neste caso é o "c" do índice 2, começando do índice 0.

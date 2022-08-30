@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: "Work Sans", Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, "px", pt
+
+            Medidas Relativas
+            "em", ex, rem, vw, vh, %
+            16px geralmente = 16em
+            */
+            font-size: 1em;
+            
+            /* lighter normal bold bolder*/
+        }
+
+        h1{
+            /*shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            font: italic bolder 3em 'Work Sans', sans;
+        }
+        h2{
+            font: bold 2em 'work Sans'
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate illum accusamus dolore totam, distinctio obcaecati non doloribus porro quibusdam a cumque iste, commodi itaque perferendis eaque quisquam ea maiores placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusamus, exercitationem repellat dignissimos dicta pariatur ea, deserunt blanditiis cum explicabo eaque, repellendus harum nesciunt debitis fugit voluptatum obcaecati! Ex, deserunt. lorem</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae ut, rem quasi corrupti qui harum perspiciatis nam molestiae, quam quidem earum dolorum asperiores voluptate rerum consectetur vero veritatis sed recusandae?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam perferendis labore, qui dignissimos eos quam voluptatibus impedit reiciendis. Libero eaque ipsa tenetur fugit vitae temporibus exercitationem delectus facere porro dolor!</p>
+</body>
+</html>

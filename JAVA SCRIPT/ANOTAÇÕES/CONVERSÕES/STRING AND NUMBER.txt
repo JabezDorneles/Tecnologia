@@ -1,0 +1,13 @@
+STRING TO NUMBER
+
+n = Number('1') // Number. funciona perfeitamente tanto para DECIMAL como para INTEIRO.
+n = Number.parseInt('1') // Number.parseInt() funciona especificamente para número inteiro.
+n = Number.parseFloat('1.1') // Number.parseFloat() funciona especificamente para número decimal.
+
+
+--------------------------------------------------
+NUMBER TO STRING
+
+n = String(1) 
+ou
+n = n.toString() // .toString com a variável no começo

@@ -1,0 +1,7 @@
+Document 
+
+document.write(`Olá, ${name}! Teu nome tem ${name.length} letras.`) 
+
+//document.write cria um documento escrito no body.
+
+

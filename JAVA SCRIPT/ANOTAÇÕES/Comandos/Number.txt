@@ -1,0 +1,18 @@
+NUMBER
+
+exemplo: 
+1543.5.toFixed(2).replace('.', ',')
+// = 1543,50
+
+1543.5.toFixed(2) // .toFixed(2) deixa fixo a QUANTIDADE DE CASAS DECIMAIS de NUMBER, e converte para string
+// = 1543.50
+
+'1543.5'.replace('.', ',') // replace (substitui uma parte da string por outra) *o valor precisa ser em string
+// = 1543,50
+
+'1543.5'.replaceAll('5', 'X') // .replaceAll (substitui todos que forem referidos)
+// resposta: 1X43.X
+
+1543.5.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) 
+//Usado para converter o NUMBER em valor de alguma moeda
+

@@ -1,0 +1,6 @@
+STRING
+
+'STRING'.length // length(comprimento - conta caractere) 
+'STRING'.toUpperCase() //TUDO MAIÚSCULO
+'STRING'.toLowerCase() //tudo minúsculo
+'STRING'.replace('STR', 'ESTIL') // Substitui uma parte da STRING

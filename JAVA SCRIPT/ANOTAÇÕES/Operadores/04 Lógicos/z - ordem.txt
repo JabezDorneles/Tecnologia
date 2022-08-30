@@ -1,0 +1,5 @@
+Ordem:
+
+01 Não: Negação
+02 E: Conjunção
+03 Ou: Desjunção

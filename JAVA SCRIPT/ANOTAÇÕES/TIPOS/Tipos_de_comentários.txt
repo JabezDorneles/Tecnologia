@@ -1,0 +1,12 @@
+JAVASCRIPT
+
+/* COMENTÁRIO EM JAVA SCRIPT */ (PODE USAR COM VÁRIAS LINHAS)
+// COMENTÁRIO EM JAVA SCRIPT    (USADO NA MESMA LINHA)
+
+----------------------------------------------------------------
+HTML
+<!-- COMENTÁRIO EM HTML -->
+-----------------------------
+CSS
+/* COMENTÁRIO EM CSS */
+-----------------------------

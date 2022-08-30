@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem/Audio/Video</title>
+    <style>mark{background-color: tomato;} h1{color: white; background-color: purple;} body{color: indigo;}
+    h2{color: blue;} h3{color: magenta;} strong{background-color: blue; color: oldlace;}</style>
+</head>
+<body>
+    <small>Atenção! A questão é pensar no usuário, em como ira sair o site a ele, como: com bom desempenho e com bom tamanho?</small>
+    <h1>Imagem/Audio/Video</h1>
+    <h2><strong>Midias Gratis</strong> para usar</h2>
+    <h3>Sites:</h3>
+    <ul>
+        <li>Imagem</li>
+        <ul>
+            <li>Pexels</li>
+        </ul>
+        <li>Audio</li>
+        <ul>
+            Youtube: Audio Libary
+        </ul>
+        <li>Video</li>
+        <ul>
+            <li>Pexels</li>
+        </ul>
+    </ul>
+    
+    <h2><strong>Imagens</strong> de acordo com a largura da janela</h2>
+    <h3>Tamanhos para imagens:</h3>
+    <ul>
+        <li>P - png: 300X300</li>
+        <li>M - png: 700X700</li>
+        <li>G - JPG (para fotografia): 1000x1000</li>
+    </ul>
+    <h3>Codigo de exemplo:</h3>
+    <pre>
+        <code>
+            &lt;picture&gt; <mark>Esta é a tag para escolher uma das imagens abaixo, começando de cima para baixo.</mark>
+                &lt;source media="(max-width: 750)" srcset="foto-P.png type="image/png"&gt; <mark>Largura menor que 750 pegará está imagem</mark>
+                &lt;source media="(max-width: 1050)" srcset="foto-M.png" type="image/png"&lt;/source&gt; <mark>Largura menor que 1050 pegará está imagem</mark>
+                &lt;img src="foto-G.jpg" alt="Foto de... - tamanho: G (principal)"&gt; <mark>Se nenhuma, está imagem.</mark>
+            &lt;/picture&gt;
+        </code>
+    </pre>
+
+    <h2><strong>Audios</strong> de acordo com a compatibilidade de navegador</h2>
+    <h3>Formatos de Audio (principais):</h3>
+    <ul>
+        <li>mp3: audio/mpeg</li>
+        <li>ogg: audio/ogg</li>
+        <li>wav: image/wav</li>
+    </ul>
+
+    <h3>Atributos da Tag Audio:</h3>
+    <ul>
+        <li>src (ou no source)</li>
+        <li>controls (controlador de audio)</li>
+        <li>autoplay (começa automaticamente)</li>
+        <li>loop (repete sem fim)</li>
+        <li>preloaod (pré-carga)</li>
+        <ul>
+            <li>metadata (informações: tamanho, tempo...)</li>
+            <li>auto (carrega automaticamente)</li>
+            <li>none (não carrega automaticamente)</li>
+        </ul>
+    </ul>
+    <h3>Código de exemplo:</h3>
+    <pre>
+        <code>
+            &lt;audio preload="metadata" controls autoplay loop&gt; <mark>Aqui configura o audio, podendo até mesmo colocar por aqui mesmo o mp3.</mark>
+            <mark>O audio a ser escolhido no source começa de cima para baixo.</mark>
+                &lt;source src="audio.mp3" type="audio/mpeg"&gt; <mark>MP3</mark>
+                &lt;source src="audio.ogg" type="audio/ogg"&gt; <mark>ogg</mark>
+                &lt;source src="audio.wav" type="image/wav"&gt; <mark>wav</mark>
+            &lt;/audio&gt;
+        </code>
+    </pre>
+
+    <h2><strong>Videos</strong> de acordo com a compatibilidade de navegador</h2>
+    <small>ogv(video/ogg) é menos popular</small>
+    <h3>Conversor:</h3>
+    <p>Handbrake (programa)</p>
+    <h3>Formato de + leve para mais pesado (por teste):</h3>
+    <small>Os 2 primeiros são os principais</small>
+    <ol>
+        <li>m4v: video/mp4</li>
+        <li>webm: video/webm</li>
+        <li>mp4: video/mp4</li>
+        <li>ogv: video/ogg</li>
+    </ol>
+    <h3>Atributos da Tag Video</h3>
+    <ul>
+        <li>src (ou no source)</li>
+        <li>width (largura)</li>
+        <li>poster (thumb)</li>
+        <li>controls (controlador de video</li>
+        <li>autoplay (play automático)</li>
+        <li>loop (repetidor infinito)</li>
+        <li>preload (pré-carga)</li>
+        <ul>
+            <li>metadata (informações: tamanho, tempo...)</li>
+            <li>auto (carrregar automaticamente)</li>
+            <li>none (não carregar automaticamente)</li>
+        </ul>
+    </ul>
+    <pre>
+        <code>
+            &lt;video width="600px" poster="thumb" preload="none" controls autoplay loop&gt;
+                &lt;source src="video.m4v" type="video/mp3"&gt;
+                &lt;source src="video.webm" type="video/webm"&gt;
+                &lt;source src="video.mp4" type="video/mp4"&gt;
+                &lt;source src="video.ogv" type="video/ogg"&gt;
+            &lt;/video&gt;
+        </code>
+    </pre>
+    <h3>Suporte no navegador:</h3>
+    <small>OGV (video/ogg) é o menos popular</small>
+    <ul>
+        <li>Google Chrome</li>
+        <ul>
+            <li>mp4</li>
+            <li>m4v</li>
+            <li>webm</li>
+            <li>ogv</li>
+        </ul>
+        <li>Microsoft Edge</li>
+        <ul>
+            <li>mp4</li>
+            <li>m4v</li>
+        </ul>
+        <li>Apple Safari</li>
+        <ul>
+            <li>mp4</li>
+            <li>m4v</li>
+        </ul>
+        <li>Mozilla Firefox</li>
+        <ul>
+            <li>webm</li>
+            <li>ogv</li>
+        </ul>
+        <li>Opera</li>
+        <ul>
+            <li>webm</li>
+            <li>ogv</li>
+        </ul>
+    </ul>
+</body>
+</html>

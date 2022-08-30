@@ -1,0 +1,6 @@
+var s = "JavaScript"
+
+
+"Eu estou aprendendo" + s // Usa concatenação
+
+`Eu estou aprendendo ${s}` // Funciona entre crase *Usa template string com o símbolo placeholder

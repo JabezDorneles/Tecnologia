@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ligações (âncora)</title>
+</head>
+<body>
+    <pre><small>
+        Link interno: pagina2.html
+        Link externo: https://gustavoguanabara...
+
+        ./  = local atual
+        ../ = Volta uma vez
+        /   = pega no começo
+
+        valor em href=''
+        #   = vazio
+            = vazio deixa a pasta atual
+    </small></pre>
+    <h1>Ligações</h1>
+    <dl>
+        <dt>&lt;a&gt; Anchor (âncora)</dt>
+        <dd>serve para dar apoio ao hipertexto, fazendo uma ligação.</dd>
+        <dt></dt>
+    </dl>
+    <p>É preciso dar a referência do lugar</p>
+    <h2>Atribuindo a ela...</h2>
+    <dl>
+        <dt>href="https://www.exemplo.com" HyperText Reference (Referência de hipertexto)</dt>
+        <dd>o lugar que a âncora dará apoio cria um link para poder acessá-la.</dd>
+    </dl>
+    <p>Quando o link do site possui versôes diferentes de idioma e/ou país, podemos optar em especificar a versão principal com:</p>
+    <dl>
+        <dt>hreflag='pt-br' HyperText Reference Language (Linguagem de referência de hipertexto)</dt>
+        <dd>versão principal do link.</dd>
+    </dl>
+    <p>O alvo é o lugar do hipertexto do link; o tipo de alvo por padrão é entrá-la pela mesma aba que esteja a sua âncora (o apoio).</p>
+    <dl>
+        <dt>target='_self(padrão)' Alvo</dt>
+        <dd>tipo de alvo</dd>
+    </dl>
+    <ul>
+        <li>target=""</li>
+        <ul>
+            <dt>_blank</dt>
+                <dd>nova janela</dd>           
+            <dt>_self</dt>
+                <dd>atual</dd>
+            <dt>_top</dt>
+               <dd>desfaz os frames e abre no navegador completo</dd>
+            <dt>_parent</dt>
+                <dd>similar ao de cima; só que com uma janela mãe mais próxima </dd>
+            <dt>-nome-do-frame</dt>
+                <dd>indica algum frame, se tiver.</dd>
+        </ul>
+    </ul>
+    <p>Para dizer para onde o site vai levar, temos o:</p>
+    <dl>
+        <dt>rel="" relationship (relação)</dt>
+        <dd>tipo de relação que tem com o acessamento do link</dd>
+    </dl>
+    <ul>
+        <li>rel=""</li>
+        <ul>
+            <dt>next Proximo</dt>
+                <dd>proxima página</dd>
+            <dt>prev Previous(anterior)</dt>
+                <dd>página anterior</dd>
+            <dt>author Autor</dt>
+                <dd>ator do artigo</dd>
+            <dt>external Externo</dt>
+                <dd>outro site</dd>
+            <dt>nofollow Não Seguir</dt>
+                <dd>propaganda ou não tem o aval(garantir que o site é isso ou aquilo)</dd>
+            <dt>dofollow Seguir</dt>
+                <dd>autoridade</dd>
+        </ul>
+    </ul>
+    <p>E se é para baixar algum arquivo, devemos atribuir o:</p>
+    <dl>
+        <dt>download="" Baixar</dt>
+            <dd>Indica que é pra baixar</dd>
+            <dd><small>o valor vazio deixa com o nome do arquivo, ou vc pode optar em escolher algum nome.</small></dd>
+    </dl>
+    <p>E para especificar o tipo de arquivo:</p>
+    <dl>
+        <dt>type="" Tipo</dt>
+        <dd>Define o tipo do link </dd>
+    </dl>
+    <ul>
+        <li>type=''</li>
+        <ul>
+            <li>https://www.iana.org/assignments/media-types/media-types.xhtml</li>
+            <dt>application/zip</dt>
+            <dt>text/html</dt>
+            <dt>text/css</dt>
+            <dt>text/javascript</dt>
+            <dt>video/mp4</dt>
+            <dt>video/H264</dt>
+            <dt>video/JPEG</dt>
+            <dt>audio/acc</dt>
+            <dt>audio/mpeg</dt>
+            <dt>font/lttf</dt>
+            <dt>image/jpeg</dt>
+            <dt>image/png</dt>
+        </ul>
+    </ul>
+</body>
+</html>

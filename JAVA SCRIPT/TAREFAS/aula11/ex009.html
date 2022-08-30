@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAÍS</title>
+</head>
+<body>
+    <h1>Tua nacionalidade</h1>
+    Qual o teu país? <input type="text" name="país" id="país">
+    <input type="button" value="Enviar" onclick='mostrar()')>
+    <div id='res'>
+
+    </div>
+    <script>
+        function mostrar(){
+            var país = window.document.getElementById('país').value.toLowerCase()
+            var res = window.document.getElementById('res')
+            res.innerHTML = `Teu país é: <strong>${país}<strong> </br>`
+            if(país == 'brasil'){
+                res.innerHTML += `Você é <strong>BRASILEIRO<strong>.`
+            }
+            else{
+                res.innerHTML += `Você é <strong>ESTRANGAEIRO<strong>.`
+            }
+        }
+    </script>
+</body>
+</html>
