@@ -40,7 +40,7 @@ header a:hover, footer a:hover{
 }
 pre{
     white-space: pre-line;
-    font-family: unset
+    font-family: unset;
 }
 section{
     padding-top: 10vh;
