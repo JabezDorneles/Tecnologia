@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +7,50 @@
     <title>Document</title>
     <style>
         body{
-            background-image: url('../exercicios/ex022/Imagens/wallpaper003.jpg');
-            background-repeat: no-repeat;
+            background-color: black;
+            color: white;
+        }
+        fieldset{
+            position: absolute;
+            width: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 3%;
+            border-radius: 30% 0%;
+            border-left: unset;
+            border-top: unset;
+        }
+        input{
+            background-color: black;
+            border: 1px solid rgb(43, 43, 43);
+            color: white;
+            height: 5vw;
+            width: 80%;
+        }
+        fieldset>legend{
+            color: red;
+            font-size: 2em;
+        }
+        fieldset:hover{
+            border-color: red;
+            transition: border-color 0.5s;
         }
 	</style>
 </head>
 <body>
-    
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="mail" id="imail" required>
+            </p>
+            <p>
+                <label for="isen">Senha: </label>
+                <input type="password" name="sen" id="isen">
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
